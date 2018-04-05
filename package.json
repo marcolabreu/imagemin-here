@@ -1,0 +1,42 @@
+{
+  "name": "imagemin-here",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "marcolabreu/imagemin-here",
+  "author": {
+    "name": "Marco Abreu",
+    "email": "marcolabreu@gmail.com",
+    "url": "github.com/marcolabreu"
+  },
+  "scripts": {
+    "all": "node scripts/imagemin-pngquant.js && node scripts/imagemin-optipng.js && node scripts/imagemin-pngcrush.js && node scripts/imagemin-pngout.js ",
+    "quant": "node scripts/imagemin-pngquant.js",
+    "opti": "node scripts/imagemin-optipng.js",
+    "crush": "node scripts/imagemin-pngcrush.js",
+    "out": "node scripts/imagemin-pngout.js"
+  },
+  "dependencies": {
+    "imagemin": "^5.3.1",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngcrush": "^5.1.0",
+    "imagemin-pngout": "^3.0.0",
+    "imagemin-pngquant": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": false,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  }
+}

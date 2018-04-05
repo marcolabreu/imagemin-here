@@ -1,0 +1,7 @@
+
+.DS_Store
+node_modules/
+optimized_images/
+
+source_images/*
+!source_images/.gitkeep
